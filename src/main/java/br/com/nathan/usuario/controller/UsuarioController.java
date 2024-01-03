@@ -45,7 +45,7 @@ public class UsuarioController {
         return ResponseEntity.ok().body(usuario);
 
     }
-
+    // jc é vagabunda
     @PutMapping("/{id}")
     public ResponseEntity<Usuario> atualizarUsuario(@RequestBody Usuario usuarioInput, @PathVariable("id") Long id) {
         Usuario usuarioupdate = usuarioService.updateUsuario(usuarioInput, id);
